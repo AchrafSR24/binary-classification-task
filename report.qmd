@@ -1,0 +1,190 @@
+---
+title: "Binary Classification Project"
+subtitle: "Predicting Class (0 / 1) using Machine Learning - Anavid Test"
+author: "Achraf SAKKA ROUIS"
+format:
+  revealjs:
+    theme: simple
+    slide-number: true
+    transition: slide
+    incremental: true
+    center: true
+execute:
+  echo: false
+---
+
+# Introduction
+
+**Task**
+
+1-	Train a classifier to predict the class: 0 or 1.
+2-	Use F1 score as evaluation metric.
+3-	Feel free to use any programming language you are comfortable with.
+4-	Use any library you are comfortable with.
+5-  Share the code and presentation explaining the details of the code and results.
+
+**objective**
+
+Predict a binary target variable (Class: 0 or 1)
+Train and compare multiple classification models
+Evaluate models using F1-score
+Provide interpretation and conclusions
+---
+
+# Dataset overview
+
+260 samples
+39 features
+Target variable: Class
+
+**Class Distribution**
+
+Classes are nearly balanced
+No dominant class
+Reduces bias during training
+
+![class_distribution](Assets/class_distribution.png)
+---
+
+# Data Cleaning
+
+**Missing Values**
+
+W1: 19 samples
+W2: 14 samples
+W3: 50 samples
+Employed: 2 samples
+
+**Handling Strategy**
+
+Mode imputation for categorical feature
+Median imputation for numerical features
+No rows removed to preserve dataset size
+---
+
+# Outlier Analysis
+
+Boxplots used for inspection
+Observed outliers correspond to valid survey responses
+No abnormal or impossible values detected
+
+---
+
+![boxplot](Assets/boxplot.png)
+
+No outlier removal applied
+
+---
+
+**Feature Scaling Decision**
+
+Most features already share similar ranges
+---
+
+# Models Used
+
+**Logistic Regression (baseline)**
+
+**Random Forest**
+
+**Support Vector Machine (SVM)**
+
+**XGBoost**
+
+Each model offers a different balance between interpretability and performance.
+---
+
+# Evaluation Metric
+
+Why F1-score?
+
+   Combines precision and recall
+
+   More informative than accuracy
+   
+   Suitable for classification problems
+
+F1 = 2* ((Precision * Recall) / (Precision * Recall))
+---
+
+# Models Results
+
+**Logistic Regression Results**
+
+1- Strong baseline performance
+
+2- Balanced precision and recall
+
+3- Few classification errors ( 6 errors each 52 test samples)
+
+4- High interpretability
+
+**Random Forest Results**
+
+1- Improved performance over baseline
+
+2- Handles non-linear relationships
+
+3- Provides feature importance
+
+---
+
+**SVM Results**
+
+1- Strong classification performance
+
+2- Requires careful tuning
+
+**XGBoost Results**
+
+1- Very high F1-score observed
+
+2- Indicates strong learning capacity
+
+3- Risk of overfitting due to small dataset	​
+
+---
+---
+
+# Model Comparison
+
+![models_comparison](Assets/models_comparison.png)
+
+---
+
+| Model               | Main Advantage              |
+| ------------------- | --------------------------- |
+| Logistic Regression | Interpretability            |
+| Random Forest       | Robust performance          |
+| SVM                 | Complex decision boundaries |
+| XGBoost             | High predictive power       |
+---
+
+# Limitations
+
+1- Limited dataset size
+
+2- Potential overfitting in complex models
+
+# Future Improvements
+
+1- Cross-validation
+
+2- Hyperparameter tuning
+
+3- Feature selection
+
+4- ROC–AUC analysis
+
+---
+
+# Conclusion
+
+Multiple models were trained and evaluated
+
+F1-score ensured balanced performance assessment
+
+Ensemble models achieved strong results
+
+---
+---
