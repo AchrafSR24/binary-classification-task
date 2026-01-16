@@ -1,10 +1,10 @@
-📊 Binary Classification Project – F1 Score Evaluation
-📌 Task Description
+# 📊 Binary Classification Project – F1 Score Evaluation
+**📌 Task Description**
 
 The objective of this project is to train a machine learning classifier to predict a binary class (0 or 1) using a given dataset.
 The model performance is evaluated using the F1-score, and the full workflow is documented through code and a presentation.
 
-✅ Task Requirements & How They Were Addressed
+**✅ Task Requirements & How They Were Addressed**
 1. Train a classifier to predict the class (0 or 1)
 
 ✔ Completed
@@ -38,13 +38,13 @@ F1-score was calculated and compared for all models.
 
 ✔ Completed
 
-Programming language used: Python
+### Programming language used: Python
 
 4. Use any library
 
 ✔ Completed
 
-The following libraries were used:
+### The following libraries were used:
 
 pandas, numpy – data handling
 
@@ -119,8 +119,6 @@ F1-score was effective in comparing models fairly.
 ⚠️ Limitations
 
 Small dataset size
-
-Single train–test split
 
 Potential overfitting for complex models
 
